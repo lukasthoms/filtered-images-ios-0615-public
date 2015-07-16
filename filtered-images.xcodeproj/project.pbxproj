@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		317B53CF1ADEF73800E82B6E /* UIImage+Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B53CE1ADEF73800E82B6E /* UIImage+Filters.m */; };
+		802F5DAA1B584E2D003627C3 /* libPods-filtered-images-MBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 802F5DA91B584E2D003627C3 /* libPods-filtered-images-MBProgressHUD.a */; };
 		D833EF88197FE7CE00E99358 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D833EF87197FE7CE00E99358 /* Foundation.framework */; };
 		D833EF8A197FE7CE00E99358 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D833EF89197FE7CE00E99358 /* CoreGraphics.framework */; };
 		D833EF8C197FE7CE00E99358 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D833EF8B197FE7CE00E99358 /* UIKit.framework */; };
@@ -40,6 +41,7 @@
 		317B53CD1ADEF73800E82B6E /* UIImage+Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Filters.h"; sourceTree = "<group>"; };
 		317B53CE1ADEF73800E82B6E /* UIImage+Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Filters.m"; sourceTree = "<group>"; };
 		3ACCD107016F40028AF55B27 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		802F5DA91B584E2D003627C3 /* libPods-filtered-images-MBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-filtered-images-MBProgressHUD.a"; path = "Pods/../build/Debug-iphoneos/libPods-filtered-images-MBProgressHUD.a"; sourceTree = "<group>"; };
 		85C8E26AD7B0BA2DBAA13C74 /* Pods-filtered-images.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtered-images.debug.xcconfig"; path = "Pods/Target Support Files/Pods-filtered-images/Pods-filtered-images.debug.xcconfig"; sourceTree = "<group>"; };
 		A61693FE01227EC60A80AC20 /* Pods-filtered-images.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtered-images.release.xcconfig"; path = "Pods/Target Support Files/Pods-filtered-images/Pods-filtered-images.release.xcconfig"; sourceTree = "<group>"; };
 		D833EF84197FE7CE00E99358 /* filtered-images.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "filtered-images.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802F5DAA1B584E2D003627C3 /* libPods-filtered-images-MBProgressHUD.a in Frameworks */,
 				D833EF8A197FE7CE00E99358 /* CoreGraphics.framework in Frameworks */,
 				D833EF8C197FE7CE00E99358 /* UIKit.framework in Frameworks */,
 				D833EF88197FE7CE00E99358 /* Foundation.framework in Frameworks */,
@@ -120,6 +123,7 @@
 		D833EF86197FE7CE00E99358 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				802F5DA91B584E2D003627C3 /* libPods-filtered-images-MBProgressHUD.a */,
 				D833EF87197FE7CE00E99358 /* Foundation.framework */,
 				D833EF89197FE7CE00E99358 /* CoreGraphics.framework */,
 				D833EF8B197FE7CE00E99358 /* UIKit.framework */,
@@ -450,6 +454,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "filtered-images/filtered-images-Prefix.pch";
 				INFOPLIST_FILE = "filtered-images/filtered-images-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +472,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "filtered-images/filtered-images-Prefix.pch";
 				INFOPLIST_FILE = "filtered-images/filtered-images-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
